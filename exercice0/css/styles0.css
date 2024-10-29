@@ -1,0 +1,53 @@
+
+#grille1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 20%;
+    margin: 20px;
+}
+
+#grille1 div {
+    height: 50px;
+    text-align: center;
+    line-height: 50px; /* vertical */
+    border:solid black 1px; 
+}
+
+#grille2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+    width: 20%;
+}
+
+#grille2 div {
+    height: 50px;
+    text-align: center;
+    line-height: 50px; 
+    border:solid black 1px; 
+}
+
+#grille3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    width: 20%;
+    margin: 20px;
+    gap: 2px; /* permet l'espace. découvert sur https://developer.mozilla.org/fr/docs/Web/CSS/gap */
+}
+
+#grille3 div {
+    text-align: center;
+    line-height: 50px; 
+    border:solid black 1px;
+}
+
+.cellule:nth-child(odd) { /*impair*/
+    background-color: pink;
+}
+
+.cellule:nth-child(even) { /*pair*/
+    background-color: lightgreen;
+} 

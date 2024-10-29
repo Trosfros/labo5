@@ -1,0 +1,52 @@
+
+#conteneur {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 50px 50px 1fr 50px; 
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer";
+    width: 30%;
+    gap: 2px; /* permet l'espace. découvert sur https://developer.mozilla.org/fr/docs/Web/CSS/gap */
+    height: 600px;
+}
+
+header {
+    grid-area: header;
+    background-color: #7FFFD4;
+    padding: 18px;
+    text-align: left;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7FFFD4;
+    padding: 18px;
+    text-align: left;
+}
+
+main {
+    grid-area: main;
+    background-color: #7FFFD4;
+    padding: 18px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #7FFFD4;
+    padding: 18px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #7FFFD4;
+    padding: 18px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
