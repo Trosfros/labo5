@@ -10,7 +10,7 @@
 #grille1 div {
     height: 50px;
     text-align: center;
-    line-height: 50px; /* vertical */
+    line-height: 50px; /* vertical trouver sur https://developer.mozilla.org/fr/docs/Web/CSS/line-height */
     border:solid black 1px; 
 }
 
